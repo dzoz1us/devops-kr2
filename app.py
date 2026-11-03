@@ -1,3 +1,4 @@
+# KR: Нуянзин
 import os
 import socket
 
@@ -34,3 +35,6 @@ def whoami():
         f"client: {request.headers.get('X-Real-IP', 'none')}\n"
         f"host: {request.headers.get('Host', 'none')}\n"
     )
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=8002)
